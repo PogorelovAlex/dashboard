@@ -1,0 +1,77 @@
+@font-face {
+  font-family: SF Pro Display;
+  src: url("../ui/fonts/SFPRODISPLAYREGULAR.OTF") format("opentype");
+  }
+
+.topbar {
+  max-width: 1640px;
+  height: 50px;
+  background-color: white;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px -10px rgb(0 0 0 / 75%);
+}
+.topbarWrapper {
+  max-width: 1440px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 30px;
+  color: darkblue;
+  cursor: pointer;
+}
+
+.topRight{
+    display: flex;
+    align-items: center;
+}
+.topLeft{
+  display: flex;
+  align-items: center;
+}
+.topbarIconContainer {
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #555;
+}
+
+.topIconBadge{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.topAvatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.dropArrow{
+  color:#DEE6F5
+}
+.companyNameText{
+  font-size: 15px;
+  font-family: "SF Pro Display";
+  color:#899CB1;
+}
+.searchIcon{
+  color:#ADBFDF
+}
