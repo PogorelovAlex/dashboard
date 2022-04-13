@@ -58,7 +58,7 @@ console.log(rows)
         const callTime = params.row.date.slice(-9, -3);
         return (
           
-          <div className="callTime">
+          <div className="callType">
             {callTime}
           </div>
         );
@@ -67,25 +67,36 @@ console.log(rows)
     { field: "person_avatar", headerName: "Сотрудник", width: 145,
   renderCell: (params) => {
       return (
-        <div className="personAvatar">
+        <div className="callType">
           <img className="personImg" src={params.row.person_avatar} alt="" />
         </div>
       );
     }, 
   },
-    // {
-    //   field: "status",
-    //   headerName: "Status",
-    //   width: 120,
-    // renderCell: (params) => {
-    //   return (
-    //     <div className="userListUser">
-    //       <img className="userListImg" src={params.row.person_avatar} alt="" />
-    //       {params.row.person_name}
-    //     </div>
-    //   );
-    // },
-    // },
+    {
+      field: "from_number",
+      headerName: "Звонок",
+      width: 150,
+    renderCell: (params) => {
+      return (
+        <div className="callType">
+          {`+${params.row.from_number}`}
+        </div>
+      );
+    },
+    },
+    {
+      field: "contact_company",
+      headerName: "Источник",
+      width: 150,
+    renderCell: (params) => {
+      return (
+        <div className="callType">
+          {params.row.contact_company}
+        </div>
+      );
+    },
+    },
     // {
     //   field: "transaction",
     //   headerName: "Transaction Volume",
