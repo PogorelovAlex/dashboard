@@ -19,7 +19,8 @@ const SideButton = styled(Button)`
     width: 200px;
     height: 52px;
     background-color: #005FF8;
-    margin-top: 34px;
+    margin-top: 17px;
+    margin-bottom: 17px;
     text-transform:none;
     border-radius:4px;
     color: rgba(250, 250, 250, 0.8)

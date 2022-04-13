@@ -1,13 +1,12 @@
 import axios from 'axios';
 import "./callsList.css";
-import  {useContext, useEffect, useState} from 'react';
+import  { useEffect, useState} from 'react';
 import { useTheme } from "@material-ui/core/styles";
 import { DataGrid } from "@material-ui/data-grid";
-import { DeleteOutline } from "@material-ui/icons";
-import { Link } from "react-router-dom";
 import Grid from '@mui/material/Grid';
 import CallMadeIcon from '@mui/icons-material/CallMade';
 import CallReceivedIcon from '@mui/icons-material/CallReceived';
+import CircularProgress from '@mui/material/CircularProgress';
 
 
 
@@ -25,6 +24,7 @@ const bodyParameters = {
 function CallsList() {
   const theme = useTheme();
   const [rows, setRows]= useState([]);
+
   useEffect(() =>{
     const fetchCalls = async() => {
       await axios.post(API_URL,bodyParameters,config).then(response => (setRows( response.data))).catch(error => {
@@ -114,7 +114,7 @@ console.log(rows)
     
     return (
             <Grid container  display="flex" flexDirection="column" justifyContent="center" alignItems="center" sx={{ width:"100%"}} >
-           { rows ? 
+           { rows.length > 0 ? 
            <Grid className="dataGridWrapper">
               <DataGrid
                 autoHeight
@@ -124,7 +124,7 @@ console.log(rows)
                 columns={columns}
                 pageSize={10}
               />
-            </Grid> :"Loading"}
+            </Grid> : <CircularProgress size = "20" />}
            
            
             </Grid>
