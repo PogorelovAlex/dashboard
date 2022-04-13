@@ -94,7 +94,7 @@ export default function Sidebar() {
       </Grid>
 
     <Grid container direction='column' diplay='flex' alignItems='center'>
-      <Grid>
+      <Grid >
         <SideBarButton type = "add" />
       </Grid>
 

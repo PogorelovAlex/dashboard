@@ -22,11 +22,11 @@ function App() {
     <ThemeProvider theme={theme}>
     <Router>
       <GlobalFonts /> 
-      <Grid container  sx={{ width:"1940px"}} display="flex" flexDirection="row">
+      <Grid container  sx={{ backgroundColor:"#E5E5E5"}} display="flex" flexDirection="row">
       <Grid item>
         <Sidebar />
       </Grid>
-      <Grid container sx={{ maxWidth:"1680px"}} display="flex" flexDirection="column" >
+      <Grid container  className="wrapper" sx={{ maxWidth:"1680px"}} display="flex" >
 
          <Topbar />  
         <Switch>

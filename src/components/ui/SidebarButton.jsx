@@ -11,12 +11,14 @@ const fontSFProDisplay = css`
 const SideButton = styled(Button)`
 *:first-of-type svg{
     font-size: 35px;
-    color: rgba(250, 250, 250, 0.5)
+    color: rgba(250, 250, 250, 0.5);
+    
   }
     ${fontSFProDisplay}
     font-size: 16px;
     width: 200px;
     height: 52px;
+    background-color: #005FF8;
     margin-top: 34px;
     text-transform:none;
     border-radius:4px;

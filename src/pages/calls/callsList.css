@@ -1,13 +1,35 @@
-.userList {
+
+.dataGridWrapper {
   flex: 4;
+  height: 100%;
+  width:1440px;
+  margin-top: 58px;
+ 
+}
+.dataGrid{
+  background-color: #FFFF;
+}
+.MuiDataGrid-root {
+  border: none!important
 }
 
-.userListUser {
+.callType {
   display: flex;
   align-items: center;
+  margin-left: 10px;
 }
 
-.userListImg {
+.callTime{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.personAvatar{
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.personImg {
   width: 32px;
   height: 32px;
   border-radius: 50%;

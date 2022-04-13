@@ -5,6 +5,7 @@ const barGreen = "#28A879";
 const barYellow = "#F2994A";
 const mainBlue ='#2F80ED';
 const secondBlue ='#091336'
+const mainGrey='#E5E5E5'
 
 
 export default createMuiTheme({
@@ -12,7 +13,8 @@ export default createMuiTheme({
     common: {
       barRed: `${barRed}`,
       barGreen: `${barGreen}`,
-      barYellow: `${barYellow}`
+      barYellow: `${barYellow}`,
+      mainGrey:`${mainGrey}`,
     },
     primary: {
       main: `${mainBlue}`
