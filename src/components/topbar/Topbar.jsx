@@ -1,6 +1,7 @@
 import React from "react";
 import "./topbar.css"; 
 import Grid from '@mui/material/Grid';
+import userFoto from '../../components/ui/svg/userFoto.svg';
 import { Search, KeyboardArrowDown } from "@material-ui/icons";
 import { useTheme } from "@material-ui/core/styles";
 import ViewDate from "../date/ViewDate";
@@ -42,7 +43,7 @@ export default function Topbar() {
             <div className ="companyNameText">ИП Сидорова Александра Михайловна</div>
             <KeyboardArrowDown className="dropArrow"/>
           </Grid>
-          <img src="https://images.pexels.com/photos/1526814/pexels-photo-1526814.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" className="topAvatar" />
+          <img src={userFoto} alt="" className="topAvatar" />
           <KeyboardArrowDown className="dropArrow"/>
         </Grid>
       </Grid>

@@ -19,6 +19,24 @@
   margin-left: 10px;
 }
 
+.callDuration {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.callDurationIcon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+.callDurationIcon:hover{
+  cursor:pointer;
+  opacity: 0.6;
+}
 .personAvatar{
   display: flex;
   align-items: center;
